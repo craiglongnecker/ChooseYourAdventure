@@ -21,11 +21,17 @@ public class SeasonTicketLocations {
 	private String state;
 	private int zipCode;
 	private String section;
-	private int row;
+	private String row;
 	private String seats;
+	private Status status;
 	
 	public SeasonTicketLocations() {
 
+	}
+	
+	public enum Status{
+		NEW,
+		RENEWAL,
 	}
 
 	public int getId() {
@@ -100,11 +106,11 @@ public class SeasonTicketLocations {
 		this.section = section;
 	}
 
-	public int getRow() {
+	public String getRow() {
 		return row;
 	}
 
-	public void setRow(int row) {
+	public void setRow(String row) {
 		this.row = row;
 	}
 
@@ -116,4 +122,11 @@ public class SeasonTicketLocations {
 		this.seats = seats;
 	}
 
+	public Status getStatus() {
+		return status;
+	}
+
+	public void setStatus(Status status) {
+		this.status = status;
+	}
 }

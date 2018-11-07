@@ -11,7 +11,7 @@
 <title>Spring MVC Form Handling</title>
 </head>
 <body>
-	<h2>Season Ticket Locations Results</h2>
+	<h2>Season Ticket Holder Added For Iowa State Football</h2>
 	<table>
 		<tr>
 			<td>ID</td>
@@ -57,7 +57,11 @@
 			<td>Seats</td>
 			<td>${s.seats}</td>
 		</tr>
+		<tr>
+			<td>Status</td>
+			<td>${s.status}</td>
+		</tr>
 	</table>
-	<a href="viewAll.mvc">View All Season Ticket Locations</a>
+	<a href="viewAll.mvc">List Of All Season Ticket Holders For Iowa State Football</a>
 </body>
 </html>

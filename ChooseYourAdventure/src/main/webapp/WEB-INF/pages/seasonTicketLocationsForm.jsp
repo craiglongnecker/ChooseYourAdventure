@@ -11,7 +11,7 @@
 <title>Spring MVC Form Handling</title>
 </head>
 <body>
-<h2>Season Ticket Locations Form</h2>
+<h2>Season Ticket Holder Form For Iowa State Football</h2>
 <mvc:form modelAttribute="seasonTicketLocations" action="result.mvc">
 	<table>
 	    <tr>
@@ -36,7 +36,7 @@
         </tr>
         <tr>
             <td><mvc:label path="state">State</mvc:label></td>
-            <td><mvc:input path="state" /></td>
+            <td><mvc:select path="state" items="${states}" /></td>
         </tr>
         <tr>
             <td><mvc:label path="zipCode">Zip Code</mvc:label></td>
@@ -44,15 +44,19 @@
         </tr>
         <tr>
             <td><mvc:label path="section">Section</mvc:label></td>
-            <td><mvc:input path="section" /></td>
+            <td><mvc:select path="section" items="${sections}" /></td>
         </tr>
          <tr>
             <td><mvc:label path="row">Row</mvc:label></td>
-            <td><mvc:input path="row" /></td>
+            <td><mvc:select path="row" items="${rows}" /></td>
         </tr>
          <tr>
             <td><mvc:label path="seats">Seats</mvc:label></td>
             <td><mvc:input path="seats" /></td>
+        </tr>
+         <tr>
+            <td><mvc:label path="status">Status</mvc:label></td>
+            <td><mvc:radiobuttons path="status" /></td>
         </tr>
         <tr>
 	        <td colspan="2">
@@ -61,6 +65,6 @@
 	    </tr>
 	</table>  
 </mvc:form>
-<a href = "viewAll.mvc">View All Season Ticket Locations</a>
+<a href = "viewAll.mvc">List Of All Season Ticket Holders For Iowa State Football</a>
 </body>
 </html>

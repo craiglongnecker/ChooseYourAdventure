@@ -9,9 +9,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>All Season Ticket Locations</title>
+<title>Spring MVC Form Handling</title>
 </head>
 <body>
+<h2>List Of All Season Ticket Holders For Iowa State Football</h2>
 	<c:forEach items="${all}" var="item">
 		<table>
 			<tr>
@@ -54,11 +55,15 @@
 				<td>Seats</td>
 				<td>${item.seats}</td>
 			</tr>
+			<tr>
+				<td>Status</td>
+				<td>${item.status}</td>
+			</tr>
 		</table>
 		<br />
 		<hr style="text-align: left; margin-left: 0; width: 25%">
 		<br />
 	</c:forEach>
-	<a href="form.mvc">Add a New Season Ticket Location</a>
+	<a href="form.mvc">Add a New Season Ticket Holder For Iowa State Football</a>
 </body>
 </html>

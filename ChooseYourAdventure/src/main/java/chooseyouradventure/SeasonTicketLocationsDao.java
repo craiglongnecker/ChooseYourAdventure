@@ -17,6 +17,7 @@ public class SeasonTicketLocationsDao {
 		em.persist(seasonTicketLocationsToAdd);
 		em.getTransaction().commit();
 		em.close();
+//		emfactory.close();	// verify this. it was not in vacation project.
 		}
 
 	public List<SeasonTicketLocations> getAllSeasonTicketLocations() {
